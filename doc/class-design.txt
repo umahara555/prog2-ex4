@@ -1,0 +1,29 @@
+クラス名　Map
+
+カプセル化する。
+
+フィールド変数として下記７項目を持つ.
+
+    int startPosX
+    int startPosY
+
+    int goalPosX
+    int goalPosY
+
+    int mapSizeX
+    int mapSizeY
+
+    String[][] map
+
+    int playerPosX
+    int playerPosY
+
+
+コンストラクタ
+    引数　String data
+    迷路ファイルを引数で受け取り、ファイルIOを行う。
+
+各ゲッター・セッター
+
+
+
