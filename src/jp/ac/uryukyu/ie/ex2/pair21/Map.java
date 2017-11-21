@@ -53,14 +53,15 @@ public class Map {
     }
 
     public void printMap(){
-        char[][] data = map;
-        data[playerPosY][playerPosX] = 'P';
-        for (char[] y: data){
+        char c = map[playerPosY][playerPosX];
+        map[playerPosY][playerPosX] = 'P';
+        for (char[] y: map){
             for (char x: y){
                 System.out.print(x);
             }
             System.out.println("");
         }
+        map[playerPosY][playerPosX] = c;
     }
 
     public boolean judgeWall(int posx, int posy){
